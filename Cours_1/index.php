@@ -64,7 +64,7 @@
             }
 
             // Le switch case est utile pour une énumération de cas. Le break permet de sortir afin d'éviter de continuer.
-            $enum_case = 15:
+            $enum_case = 15;
             switch ($enum_case) {
                 case 0 :
                     echo "t'as 0 ans.";
@@ -158,11 +158,12 @@
             ];
 
             foreach ($userList as $userInfo) {
-                    ?>
-                    <h2 style="text-align:center; background:#EEE"><?= $userInfo['nom'];
-            }?>
 
-        <?php
+                    ?>
+                    <h2 style="text-align:center; background:#EEE"><?= $userInfo['nom']; ?>
+
+            <?php
+            }
         // L'orienté objet :
             
             echo '<br><hr><br>';
