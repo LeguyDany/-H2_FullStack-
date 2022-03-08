@@ -168,6 +168,8 @@
             
             echo '<br><hr><br>';
 
+
+
             class Voiture {
                 // Voici des attributs. 
                 public $model; // On ne peut pas accéder à une propriété privée dans une classe. On peut accéder à une propriété publique par contre. 
@@ -194,7 +196,23 @@
 
             $voitureDeMaurice = new Voiture('laguna', 'Renauld', 'essence');
             echo $voitureDeFrancis -> model; // Appel d'un attribut de l'objet. 
-            
+
+
+
+        // Les fonctions cours 2
+            function add( int $a, int$b ): int
+            {
+                return $a + $b ;
+            }
+
+            // Les variables ont une portée locale. La variable foo ne sera pas print avec cette fonction, car elle n'existe pas dans la fonction BazBat.
+            $foo = "bar";
+            function BazBat(){
+                return $foo;
+            }
+
+            echo BazBat();
+                
     ?>
 
 </body>
