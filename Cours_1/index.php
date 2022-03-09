@@ -213,6 +213,52 @@
 
             echo BazBat();
                 
+
+        // Formulaire
+            // On va se faire un formulaire de connexion.
+
+            ?>
+                <br><br><br>
+
+                <div>
+                    <h2>Formulaire</h2>
+                    <form method="post" action="/check_connect.php">
+                        <!-- type : L'information dans le champs. color, password, radio, text, range etc. -->
+                        <!-- name : Permet d'aller chercher l'information dans le champs.  -->
+                        <input type="text" name="username" id="usernameid" placeholder="dany@gmail.com">
+                        <label for="usernameid">Username</label> 
+                        <!-- Dans "label", le for permet d'associer le label à l'input correspondant. -->
+
+                        <br>
+                        <input type="password" name="password" id="passid">
+                        <label for="passid">Password</label>
+                        
+                        <br>
+                        <button type="submit">Go</button>
+
+                    </form>
+
+                </div>
+
+                <br><br><br>
+
+            <br><br><br> <?php
+
+            // Les cookies sont des fichiers text stockés par le navigateur sur notre système local. Il y aura des métadonnées sur l'expiration, on va trouver des pairs clés-valeur. 
+
+            //var_dump($_SESSION); // C'est la super global permettant de stocker des variables de session. On pourrait y stocker un bouléen pour vérifier si on est connecté ou pas. 
+
+            // $var = "fnijojnoirj";
+
+            // if ( $var == true ) {
+            //     // C'est une pseudo-égalité. On peut sonc utiliser des raccourcis d'écriture intéressants :
+            //     // if ( $var )
+            //     // if ( !$var )
+            //     echo "c'est vrai";
+            // } else {
+            //     echo "cé fô";
+            // }
+
     ?>
 
 </body>
